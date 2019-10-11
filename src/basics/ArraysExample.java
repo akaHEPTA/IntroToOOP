@@ -1,3 +1,5 @@
+package basics;
+
 import java.util.Arrays;
 
 public class ArraysExample {
@@ -37,6 +39,6 @@ public class ArraysExample {
             System.out.println(country);
         }
 
-        
+
     }
 }
