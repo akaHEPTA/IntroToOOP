@@ -2,45 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ae04c18-4124-4767-b972-66d786d16997" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/IntroToOOP/META-INF/IntroToOOP.kotlin_module" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/IntroToOOP/basics/ArraysExample.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/IntroToOOP/basics/DataTypes.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/IntroToOOP/basics/FlowControl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/IntroToOOP/basics/HelloWorld.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/IntroToOOP/basics/IOExample.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/IntroToOOP/basics/StaticMethods.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/IntroToOOP/basics/StringExample.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/IntroToOOP/classes/Client.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/IntroToOOP/classes/Contact.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/IntroToOOP/classes/ContactsManager.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/IntroToOOP/classes/Driver.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/IntroToOOP/classes/Pokemon.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/basics/StaticMethods.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/basics/StringExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/classes/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/classes/Contact.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/classes/ContactsManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/classes/Driver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/classes/Pokemon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/encapsulation/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/encapsulation/Driver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/encapsulation/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab01/Driver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab01/Model.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/userInteraction/GuessNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/userInteraction/Weather.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/userInteraction/WordCounter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vancouver.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IntroToOOP/ArraysExample.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IntroToOOP/DataTypes.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IntroToOOP/FlowControl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IntroToOOP/HelloWorld.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IntroToOOP/IOExample.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IntroToOOP/Loops.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IntroToOOP/basics/Loops.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ArraysExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/basics/ArraysExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataTypes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/basics/DataTypes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FlowControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/basics/FlowControl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HelloWorld.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/basics/HelloWorld.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IOExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/basics/IOExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Loops.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/basics/Loops.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -62,13 +30,16 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../FridayExercise1" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/" />
     </key>
@@ -85,20 +56,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Driver (1)">
-    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="classes.Client" />
-      <module name="IntroToOOP" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="encapsulation.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Driver">
     <configuration name="Driver (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="encapsulation.Driver" />
       <module name="IntroToOOP" />
@@ -113,11 +71,11 @@
       </method>
     </configuration>
     <configuration name="Driver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="classes.Driver" />
+      <option name="MAIN_CLASS_NAME" value="Lab01.Driver" />
       <module name="IntroToOOP" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="encapsulation.*" />
+          <option name="PATTERN" value="Lab01.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -125,27 +83,60 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StaticMethods" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="basics.StaticMethods" />
+    <configuration name="GuessNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="userInteraction.GuessNumber" />
       <module name="IntroToOOP" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="userInteraction.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StringExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="basics.StringExample" />
+    <configuration name="Weather" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="userInteraction.Weather" />
       <module name="IntroToOOP" />
+      <option name="PROGRAM_PARAMETERS" value="Vancouver Sydney Tokyo MexicoCity Victoria" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="userInteraction.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="WordCounter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="userInteraction.WordCounter" />
+      <module name="IntroToOOP" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="userInteraction.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Driver (1)" />
+      <item itemvalue="Application.GuessNumber" />
+      <item itemvalue="Application.Weather" />
+      <item itemvalue="Application.WordCounter" />
+      <item itemvalue="Application.Driver" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Driver (1)" />
-        <item itemvalue="Application.Client" />
         <item itemvalue="Application.Driver" />
-        <item itemvalue="Application.StaticMethods" />
-        <item itemvalue="Application.StringExample" />
+        <item itemvalue="Application.Weather" />
+        <item itemvalue="Application.WordCounter" />
+        <item itemvalue="Application.GuessNumber" />
+        <item itemvalue="Application.Driver (1)" />
       </list>
     </recent_temporary>
   </component>
