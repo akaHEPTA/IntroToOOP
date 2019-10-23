@@ -1,5 +1,7 @@
 package Lab01;
 
+import org.w3c.dom.ls.LSOutput;
+
 /**
  * Represents a Model.
  * This class contains Model's specific profile data
@@ -32,6 +34,7 @@ public class Model {
      * Creates a new Model without parameters.
      */
     public Model() {
+
     }
 
     /**
@@ -71,7 +74,6 @@ public class Model {
     }
 
     // Setters
-
     /**
      * Sets first name of this Model.
      * @param firstName First name of this Model
@@ -230,14 +232,24 @@ public class Model {
         System.out.println("Name: " + getFirstName() + " " + getLastName());
         System.out.println("Height: " + getHeight() + " inches");
         System.out.println("Weight: " + (int) getWeight() + " pounds");
-        System.out.print("Does ");
-        if (!isCanTravel())
-            System.out.print("not ");
-        System.out.println("travel");
-        System.out.print("Does ");
-        if (!isSmokes())
-            System.out.print("not ");
-        System.out.println("smoke");
+
+        // unary, binary, ternary(3)
+        // ternary operator
+        String travelMessage = canTravel ? "Does travel" : "Does not travel";
+        System.out.println(travelMessage);
+
+        String smokeMessage = smokes ? "Does smoke" : "Does not smoke";
+        System.out.println(smokeMessage);
+
+        // ternary operators can replace simple if-else statement
+        // System.out.print("Does ");
+        // if (!isCanTravel())
+        //     System.out.print("not ");
+        // System.out.println("travel");
+        // System.out.print("Does ");
+        // if (!isSmokes())
+        //     System.out.print("not ");
+        // System.out.println("smoke");
     }
 
     /**
@@ -264,16 +276,10 @@ public class Model {
         System.out.println("Name: " + getFirstName() + " " + getLastName());
         System.out.println("Height: " + getHeightInFeetAndInches());
         System.out.println("Weight: " + getWeight() + " pounds");
-        System.out.print("Travels: ");
-        if (isCanTravel())
-            System.out.println("yep");
-        else
-            System.out.println("nope");
-        System.out.print("Smokes: ");
-        if (isSmokes())
-            System.out.println("yep");
-        else
-            System.out.println("nope");
+        String travelMessage = canTravel ? "yep" : "nope";
+        System.out.println("Travels: " + travelMessage);
+        String smokeMessage = smokes ? "yep" : "nope";
+        System.out.println("Smokes" + smokeMessage);
         System.out.println("Hourly rate: $" + calculatePayDollarsPerHour());
     }
 

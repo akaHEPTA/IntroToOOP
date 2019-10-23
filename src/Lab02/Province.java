@@ -1,3 +1,5 @@
+package Lab02;
+
 public class Province {
     // Constant
     private static final String DEFAULT_PROVINCE = "British Columbia";
@@ -11,7 +13,6 @@ public class Province {
 
     // Constructor
     public Province() {
-
     }
 
     public Province(String name, String capital, long population) {
@@ -31,7 +32,7 @@ public class Province {
         return name;
     }
 
-    private void setName(String name) {
+    public void setName(String name) {
         this.name = name;
     }
 
@@ -39,7 +40,7 @@ public class Province {
         return capital;
     }
 
-    private void setCapital(String capital) {
+    public void setCapital(String capital) {
         this.capital = capital;
     }
 
@@ -47,7 +48,7 @@ public class Province {
         return population;
     }
 
-    private void setPopulation(long population) {
+    public void setPopulation(long population) {
         this.population = population;
     }
 

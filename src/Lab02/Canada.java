@@ -1,3 +1,5 @@
+package Lab02;
+
 public class Canada {
     // Constance
     private static final int MILLION = 1_000_000;
@@ -9,15 +11,16 @@ public class Canada {
             142_907, 8_164_361, 1_098_352};
 
     // Field
-    private static Province[] provinces = null;
+    private Province[] provinces = null;
 
     // Constructor
     public Canada() {
         provinces = new Province[10];
-
         for (int i = 0; i < 10; i++) {
             provinces[i] = (new Province(NAMES[i], CAPITALS[i], POPULATIONS[i]));
         }
+        // wrong case for test
+        // provinces[0] = new Province("Altario", "Manito", 1_000_000);
     }
 
     // Methods
