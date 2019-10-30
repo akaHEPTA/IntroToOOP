@@ -19,6 +19,11 @@ public class ProductManager extends Employee {
     }
 
     @Override
+    public void work() {
+        System.out.println("I'm managing the product...");
+    }
+
+    @Override
     public String toString() {
         return "ProductManager{" +
                 "productCode='" + productCode + '\'' +

@@ -19,6 +19,11 @@ public class DataScientist extends Employee {
     }
 
     @Override
+    public void work() {
+        System.out.println("I'm using Python and Panda and SQL");
+    }
+
+    @Override
     public String toString() {
         return "DataScientist{" +
                 "databaseCode='" + databaseCode + '\'' +

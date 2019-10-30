@@ -19,6 +19,11 @@ public class SoftwareDeveloper extends Employee {
     }
 
     @Override
+    public void work() {
+        System.out.println("I'm coding...");
+    }
+
+    @Override
     public long getSalary() {
         return super.getSalary() + 20000;
     }

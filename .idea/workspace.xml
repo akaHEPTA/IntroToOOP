@@ -2,13 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ae04c18-4124-4767-b972-66d786d16997" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Lab01/Driver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Lab01/Model.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/userInteraction/GuessNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/userInteraction/Weather.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/userInteraction/WordCounter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vancouver.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab03/Bishop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab03/Driver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab03/King.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab03/Knight.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab03/Pawn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab03/Piece.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab03/Queen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab03/Rook.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/collections/lists/ArrayListExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/interfaces/Marvel/CaptainAmerica.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/interfaces/Marvel/Flyable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/interfaces/Marvel/Hulk.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/interfaces/Marvel/IronMan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/interfaces/Marvel/SpiderMan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/interfaces/Marvel/SuperHero.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/interfaces/Marvel/Thor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/interfaces/ex1/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/interfaces/ex1/Caravan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/interfaces/ex1/Driver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/interfaces/ex1/Habitable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/interfaces/ex1/House.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/interfaces/ex1/Movable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/polymorphism/DataScientist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/polymorphism/DataScientist.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/polymorphism/Designer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/polymorphism/Designer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/polymorphism/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/polymorphism/Driver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/polymorphism/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/polymorphism/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/polymorphism/ProductManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/polymorphism/ProductManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/polymorphism/SoftwareDeveloper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/polymorphism/SoftwareDeveloper.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,6 +41,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -30,10 +53,10 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../FridayExercise1" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
   </component>
   <component name="RecentsManager">
@@ -56,13 +79,65 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Driver">
-    <configuration name="Driver (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="encapsulation.Driver" />
+  <component name="RunManager" selected="Application.Driver (4)">
+    <configuration name="ArrayListExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="collections.lists.ArrayListExample" />
       <module name="IntroToOOP" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="encapsulation.*" />
+          <option name="PATTERN" value="collections.lists.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Driver (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Lab02.Driver" />
+      <module name="IntroToOOP" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Lab02.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Driver (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="inheritance.Driver" />
+      <module name="IntroToOOP" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="inheritance.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Driver (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="polymorphism.Driver" />
+      <module name="IntroToOOP" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="polymorphism.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Driver (4)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Lab03.Driver" />
+      <module name="IntroToOOP" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Lab03.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -71,51 +146,11 @@
       </method>
     </configuration>
     <configuration name="Driver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Lab01.Driver" />
+      <option name="MAIN_CLASS_NAME" value="interfaces.ex1.Driver" />
       <module name="IntroToOOP" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Lab01.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GuessNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="userInteraction.GuessNumber" />
-      <module name="IntroToOOP" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="userInteraction.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Weather" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="userInteraction.Weather" />
-      <module name="IntroToOOP" />
-      <option name="PROGRAM_PARAMETERS" value="Vancouver Sydney Tokyo MexicoCity Victoria" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="userInteraction.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WordCounter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="userInteraction.WordCounter" />
-      <module name="IntroToOOP" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="userInteraction.*" />
+          <option name="PATTERN" value="interfaces.ex1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -125,18 +160,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.Driver (1)" />
-      <item itemvalue="Application.GuessNumber" />
-      <item itemvalue="Application.Weather" />
-      <item itemvalue="Application.WordCounter" />
-      <item itemvalue="Application.Driver" />
+      <item itemvalue="Application.Driver (2)" />
+      <item itemvalue="Application.Driver (3)" />
+      <item itemvalue="Application.ArrayListExample" />
+      <item itemvalue="Application.Driver (4)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Driver" />
-        <item itemvalue="Application.Weather" />
-        <item itemvalue="Application.WordCounter" />
-        <item itemvalue="Application.GuessNumber" />
-        <item itemvalue="Application.Driver (1)" />
+        <item itemvalue="Application.Driver (4)" />
+        <item itemvalue="Application.Driver (4)" />
+        <item itemvalue="Application.Driver (3)" />
+        <item itemvalue="Application.ArrayListExample" />
+        <item itemvalue="Application.Driver (2)" />
       </list>
     </recent_temporary>
   </component>

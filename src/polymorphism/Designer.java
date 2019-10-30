@@ -19,6 +19,11 @@ public class Designer extends Employee {
     }
 
     @Override
+    public void work() {
+        System.out.println("I'm using PhotoShop and illustrator");
+    }
+
+    @Override
     public String toString() {
         return "Designer{" +
                 "hasUXSkills=" + hasUXSkills +

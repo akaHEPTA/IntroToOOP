@@ -25,6 +25,8 @@ public class Driver {
 
         // What if Software Developer always (secretly) get bonus (+ $20,000)
 
+        for(Employee emp: dreamTeam)
+            emp.work();
 
     }
 }
