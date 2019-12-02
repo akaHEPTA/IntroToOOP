@@ -1,11 +1,8 @@
-package collections.list;
-
-import java.util.LinkedList;
+package collections.list2;
 
 public class LinkedListExamples {
     public static void main(String[] args) {
         MySinglyLinkedList<String> ll = new MySinglyLinkedList<>();
-        System.out.println(ll);
         ll.addLast("Gucci");
         ll.addLast("Louis Vuitton");
         ll.addLast("Dior");
@@ -13,21 +10,12 @@ public class LinkedListExamples {
         ll.addLast("Chanel");
         ll.addLast("Versace");
         ll.addLast("Dolce & Gabanna");
-        System.out.println(ll);
-        ll.removeFirst();
-        ll.removeLast();
         printLinkedList(ll);
+        System.out.println(ll.size());
+        ll.remove(3);
+        printLinkedList(ll);
+        System.out.println(ll.size());
 
-        LinkedList<String> javaLl = new LinkedList<>();
-        javaLl.addLast("Nike");
-        javaLl.addLast("Adidas");
-        javaLl.addLast("Under Armour");
-        javaLl.addLast("Fake Supreme");
-        javaLl.addLast("H&M");
-        javaLl.addLast("Uniqlo"); // Unique Clothing
-        javaLl.addFirst("Hollister");
-        javaLl.addFirst("Zara");
-        System.out.println(javaLl);
     }
 
     private static <E> void printLinkedList(MySinglyLinkedList<E> ll) {

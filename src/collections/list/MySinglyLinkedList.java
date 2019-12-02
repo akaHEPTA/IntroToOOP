@@ -1,24 +1,33 @@
 package collections.list;
+// * Relationships
+// inheritance (is-a)
+// - Shape -> Circle, Rectangle
+// - Employee -> Developer, Designer
+
+// composition (has-a) - "inner class"
+// - College -> Department
+// - LinkedList -> Node
 
 import java.util.NoSuchElementException;
-import java.util.Objects;
 
-// class LinkedList<E> implements List<E>, Deque<E>
+// class LinkList<E> implements List<E>, Deque<E>
 public class MySinglyLinkedList<E> {
-    private Node<E> head, tail;
-    private int size;
+
+    private Node<E> head, tail; // null;
+    private int size; // 0;
 
     public MySinglyLinkedList() {
     }
 
-    public void addFirst(E e) {
+    public void addFirst(E e)  {
         final Node<E> h = head;
         final Node<E> newNode = new Node<>(e, h);
         head = newNode;
-
-        // adding new node to the empty linked list - tail should also point to newNode
-        if (h == null) tail = newNode;
-
+        if (h == null) {
+            // adding new node to the empty linked list
+            // tail should also point to newNode
+            tail = newNode;
+        }
         size++;
     }
 
@@ -26,21 +35,27 @@ public class MySinglyLinkedList<E> {
         final Node<E> t = tail;
         final Node<E> newNode = new Node<>(e, null);
         tail = newNode;
-
-        // update the previous node to point right one added
-        if (t == null) head = newNode;
-        else t.next = newNode;
-
+        if (t == null) {
+            head = newNode;
+        } else {
+            t.next = newNode;
+        }
         size++;
     }
 
     public void add(int index, E e) {
-        if (index < 0 || index > size) throw new IndexOutOfBoundsException();
-        if (index == 0) addFirst(e);
-        else if (index == size) addLast(e);
-        else {
+        if (index < 0 || index > size) {
+            throw new IndexOutOfBoundsException();
+        }
+        if (index == 0) {
+            addFirst(e);
+        } else if (index == size) {
+            addLast(e);
+        } else {
             Node<E> cur = head;
-            for (int i = 0; i < index - 1; i++) cur = cur.next;
+            for (int i = 0; i < index - 1; i++) {
+                cur = cur.next;
+            }
             cur.next = new Node<>(e, cur.next);
             size++;
         }
@@ -48,66 +63,75 @@ public class MySinglyLinkedList<E> {
 
     public E removeFirst() {
         final Node<E> h = head;
-        if (h == null) throw new NoSuchElementException();
-        final E e = h.item;
+        if (h == null) {
+            throw new NoSuchElementException();
+        }
+        final E elem = h.item;
         final Node<E> next = h.next;
-
-        // helping Garage Collector
         h.item = null;
-        h.next = null;
-
+        h.next = null; // helping Garbage Collector
         head = next;
-        if (next == null) tail = null;
+        if (next == null) {
+            tail = null;
+        }
         size--;
-
-        return e;
+        return elem;
     }
 
     /**
-     * This method can be improved by using Doubly-Linked list.
-     * (Doubly-Linked List has `prev` pointer.
+     * This method can be improved by using Doubly-Linked List.
+     * (Doubly-Linked List has `prev` pointer.)
      * ex) tail.prev (second last node)
-     *
-     * @return
      */
     public E removeLast() {
         final Node<E> h = head;
-        if (h == null) throw new NoSuchElementException();
-
-        // edge case when you have a single node
-        if (size == 1) return removeFirst();
-
+        if (h == null) {
+            throw new NoSuchElementException();
+        }
+        /// edge case when you have a single node
+        if (size == 1) {
+            return removeFirst();
+        }
         Node<E> nodeBefore = h;
-
-        // doubly linked list is faster
-        for (int i = 0; i < size - 2; i++) nodeBefore = nodeBefore.next;
-
+        /* doubly linked list is faster here */
+        for (int i = 0; i < size - 2; i++) {
+            nodeBefore = nodeBefore.next;
+        }
         Node<E> nodeToRemove = nodeBefore.next;
         nodeBefore.next = null;
         tail = nodeBefore;
         size--;
-
         return nodeToRemove.item;
     }
 
     public E getFirst() {
-        if (head == null) throw new NoSuchElementException();
+        if (head == null) {
+            throw new NoSuchElementException();
+        }
         return head.item;
     }
 
     public E getLast() {
-        if (tail == null) throw new NoSuchElementException();
+        if (tail == null) {
+            throw new NoSuchElementException();
+        }
         return tail.item;
     }
 
     public int size() {
-        return this.size;
+        return size;
     }
 
     private Node<E> getNodeAt(int index) {
-        if (index < 0 || index >= size) throw new IndexOutOfBoundsException();
+        // index validation
+        if (index < 0 || index >= size) {
+            throw new IndexOutOfBoundsException();
+        }
+        // navigate to the right node (index)
         Node<E> cur = head;
-        for (int i = 0; i < index; i++) cur = cur.next;
+        for (int i = 0; i < index; i++) {
+            cur = cur.next;
+        }
         return cur;
     }
 
@@ -126,12 +150,16 @@ public class MySinglyLinkedList<E> {
         int index = 0;
         if (o == null) {
             for (Node<E> x = head; x != null; x = x.next) {
-                if (x.item != null) return index;
+                if (x.item == null) {
+                    return index;
+                }
                 index++;
             }
         } else {
             for (Node<E> x = head; x != null; x = x.next) {
-                if (o.equals(x.item)) return index;
+                if (o.equals(x.item)) {
+                    return index;
+                }
                 index++;
             }
         }
@@ -139,48 +167,71 @@ public class MySinglyLinkedList<E> {
     }
 
     public boolean remove(Object o) {
-        // todo
+        // TODO: question 1
         return false;
     }
 
     public boolean remove(int index) {
-        // Index check
-        if (index < 0 || index >= size) throw new IndexOutOfBoundsException();
-
-        boolean result = false;
-        if (index == 0) {
-            if (removeFirst() != null) result = true;
-        } else if (index == size - 1) {
-            if (removeLast() != null) result = true;
-        } else {
-            // linear search
-            Node<E> prev = head;
-            for (int i = 0; i < index - 1; i++) prev = prev.next;
-            // reconnect link
-            prev.next = prev.next.next;
-            size--;
-            result = true;
-        }
-        return result;
+        // TODO: question 2
+        return false;
     }
 
+    /**
+     * This can be improved by using doubly-linked list
+     */
     public int lastIndexOf(Object o) {
-        // todo
-        return 0;
+        // TODO: question 3
+        int index = 0;
+        int lastIndex = -1;
+        if (o == null) {
+            for (Node<E> x = head; x != null; x = x.next) {
+                if (x.item == null) {
+                    lastIndex = index;
+                }
+                index++;
+            }
+        } else {
+            for (Node<E> x = head; x != null; x = x.next) {
+                if (o.equals(x.item)) {
+                    lastIndex = index;
+                }
+                index++;
+            }
+        }
+        if (lastIndex != -1){
+            return lastIndex;
+        }
+        return -1;
     }
 
+    /**
+     * Reverses the current linked list
+     * "A" -> "B" -> "C"
+     * should be
+     * "C" -> "B" -> "A"
+     */
     public void reverse() {
-        // todo
+        // TODO: question 5
     }
 
     public boolean contains(Object o) {
-        return indexOf(0) >= 0;
+        return indexOf(o) >= 0;
     }
 
     @Override
     public String toString() {
-        // todo
-        return super.toString();
+        // TODO: question 4
+        int length = size - 1;
+        if (length < 0) {
+            return "[]";
+        }
+        StringBuilder s = new StringBuilder();
+        s.append("[");
+        for (int i = 0; i < length; i++) {
+            s.append(get(i)).append(", ");
+        }
+        s.append(get(length)).append("]");
+        return s.toString();
     }
 
     private static class Node<E> {
@@ -192,16 +243,4 @@ public class MySinglyLinkedList<E> {
             this.next = next;
         }
     }
-
-
 }
-
-// * Relationships
-
-// inheritance (is-a)
-// - Shape -> Circle, Rectangle
-// - Employee -> Developer, Designer
-
-// Composition (has-a) - "inner class"
-// - College -> Department
-// - LinkedList -> Node
